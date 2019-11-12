@@ -1,0 +1,82 @@
+<html>
+<head>
+        <script type="text/javascript" src="js/table_script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Class</th>
+<th>Year</th>
+<th>City</th>
+<th>Country</th>
+</tr>
+
+<tr id="row1">
+        <td id="ID1">1</td>
+        <td id="Name1">Rahul Saxena</td>
+        <td id="Email1">rahulsaxena@live.com</td>
+        <td id= "Class1">MCA</td>
+        <td id="Year1"> 2012</td>
+        <td id="City1">Noida</td>
+        <td id="Country1"> India</td>
+        <td>
+                <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+        </td>
+</tr>
+
+<tr id="row2">
+        <td id="ID2">2</td>
+        <td id="Name2">Priya Mathur Saxena</td>
+        <td id="Email2">priya@live.com</td>
+        <td id= "Class2">BTech</td>
+        <td id="Year2"> 2009</td>
+        <td id="City2">Gurugaon</td>
+        <td id="Country2"> India</td>
+        <td>
+                <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+        </td>
+</tr>
+
+<tr id="row3">
+        <td id="ID3">3</td>
+        <td id="Name3">Sara Sinha</td>
+        <td id="Email3">sara@sara.com</td>
+        <td id= "Class3">MCA</td>
+        <td id="Year3"> 2012</td>
+        <td id="City3">Hyderabad</td>
+        <td id="Country3"> India</td>
+        <td>
+                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+        </td>
+</tr>
+
+
+
+
+<tr>
+        <td><input type="text" id="new_id"></td>
+        <td><input type="text" id="new_name"></td>
+        <td><input type="text" id="new_email"></td>
+        <td><input type="text" id="new_class"></td>
+        <td><input type="text" id="new_year"></td>
+        <td><input type="text" id="new_city"></td>
+        <td><input type="text" id="new_country"></td>
+        <td><input type="button" class="add" onclick="add_row()" value="Add Row"></td>
+</tr>
+
+</table>
+</div>
+
+</body>
+
+</html>
